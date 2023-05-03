@@ -94,6 +94,14 @@ button{
   border: rgba(255,255,255,.7);
 }
 
+button:hover{
+  cursor:pointer;
+}
+
+button:active{
+  scale:.95;
+}
+
 #signos{
   position: absolute;
   top: 60px;
