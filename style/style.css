@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to bottom right, #102245, #FFA17A);
+  background-size: 100% 100% ;
+  background-attachment: fixed;
+  overflow: hidden;
+  height:100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container{
+  width: 450px;
+  height: 600px;
+  background: linear-gradient(to bottom right, #102245, #FFA17A);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:inset 2px -2px 50px #00000099, -30px 30px 50px #00000099,inset 30px -40px 50px #00000099;
+  border: .4px rgba(0,0,0,.6) inset;
+  border-radius: 20px;
+  position: relative;
+  transition: 3s;  
+  opacity: 85%;
+  scale: .9;
+}
+
+
+div.escolha{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -20px 20px 50px #00000099;
+  border: .4px rgba(0,0,0,.6) inset;
+  padding: 20px;
+  color: #f2f2f2;
+  text-shadow: -10px 10px 10px #111;
+  position:relative;
+}
+
+.escolha h1{
+  position:absolute;
+  top: 1%;
+  text-align: center;
+  color: #f2f2f2;
+  text-shadow: -10px 10px 10px #111;
+}
+
+img{
+ 
+  position: absolute;
+  width: 120vw;
+  height: 100vh;
+  z-index: -1;
+  opacity:40%;
+  animation: is-scale 2s alternate-reverse infinite;
+}
+
+@keyframes is-scale{
+  to{
+    scale: 1.04;
+  }
+}
+
+div#frase{
+  position: absolute;
+  bottom: 13px;
+  width: 280px;
+  text-align:center;
+}  
+
+button{
+  position: absolute;
+  top: 110px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  box-shadow: -4px -4px 15px rgba(255,255,255,.5), 4px 
+ 4px 15px rgba(0,0,0,.2);
+  border: rgba(255,255,255,.7);
+}
+
+#signos{
+  position: absolute;
+  top: 60px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  box-shadow: -4px -4px 15px rgba(255,255,255,.2), 4px 
+ 4px 15px rgba(0,0,0,.6),inset -4px -4px 15px rgba(255,255,255,.3), inset 4px 
+ 4px 15px rgba(0,0,0,.4);
+  border: rgba(255,255,255,.2);
+  outline: none;
+}
+
+div.contact-box{
+  position: absolute;
+  bottom: -40px;
+  left: 42%;
+  scale: 1.1;
+}
+
+
+div.contact-box a{
+  text-decoration: none;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.contact-box a svg{
+  scale: 1.5;
+  rotate: -10deg;
+}
+
+div.contact-box a:hover > svg{
+  rotate: 0deg;
+}
